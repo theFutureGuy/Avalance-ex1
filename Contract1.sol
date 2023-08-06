@@ -15,10 +15,9 @@ contract CalculationExample {
 
     function multiply(uint256 a, uint256 b) public {
         // Using assert() to check for internal errors
-        assert(a != b);
-
         // Performing the calculation
         result = a * b; 
+        assert(result == a*b);
     }
 
     function divide(uint256 a, uint256 b) public {
